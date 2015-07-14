@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<ul>
+		<li><a href=""></a></li>
+	</ul>
+
+	<ul>
+		<li><a href=""></a></li>
+	</ul>
+	<ul>
+		<li>
+			<p></p>
+		</li>
+	</ul>
+	<!-- ((ul>li>a+ul>li>p))-->
+
+	<div></div>
+	<div>
+		<p>
+			<span></span><em></em>
+		</p>
+		<blockquote></blockquote>
+	</div>
+	<!-- div+div>p>span+em^bq -->
+
+
+	<ul>
+		<li><a href=""></a>
+			<ul>
+				<li></li>
+			</ul>
+			<p></p></li>
+	</ul>
+	<!-- (ul>li>a)+ul>li^p -->
+
+	<ul>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+	<ul>
+		<li></li>
+	</ul>
+	<p></p>
+	<!-- (ul>li*5>a)+ul>li^p -->
+
+	<div class="row"></div>
+	<!-- .row -->
+
+
+	<p class="row row2 row3"></p>
+	<p id="id" class="row"></p>
+
+	<!-- input[type=email][placeholder=$$$]*5 -->
+	<input type="email" placeholder="001" />
+	<input type="email" placeholder="002" />
+	<input type="email" placeholder="003" />
+	<input type="email" placeholder="004" />
+	<input type="email" placeholder="005" />
+
+	<input type="email" placeholder="005" />
+	<input type="email" placeholder="004" />
+	<input type="email" placeholder="003" />
+	<input type="email" placeholder="002" />
+	<input type="email" placeholder="001" />
+	<!-- input[type=email][placeholder=$$$@-]*5 -->
+
+	<input type="email" placeholder="013" />
+	<input type="email" placeholder="012" />
+	<input type="email" placeholder="011" />
+	<input type="email" placeholder="010" />
+	<input type="email" placeholder="009" />
+	<!-- input[type=email][placeholder=$$$@-9]*5 -->
+
+	<ul>
+		<li><a href="">Click me</a> <a href="">Click me</a> <a href="">Click
+				me</a> <a href="">Click me</a> <a href="">Click me</a></li>
+	</ul>
+	<ul>
+		<li><a href=""></a></li>
+		<p></p>
+	</ul>
+	<!-- (ul>li>a{Click me}*5)+ul>li>a^p -->
+
+
+	<!-- .row>.small-12.columns>.row>.small-6.columns.small-centered.panel>form[method=post]>input[type=text
+	placeholder=$]*3^^^^(.small-6.columns>.row>(.small-6.columns>a[href=#]{Podblok
+	$$$})*2)*2 -->
+
+	<div class="row">
+		<div class="small-12 columns"></div>
+		<div class="small-6 columns">
+			<div class="row">
+				<div class="small-6 columns">
+					<a href="#">Podblok 001</a>
+				</div>
+				<div class="small-6 columns">
+					<a href="#">Podblok 002</a>
+				</div>
+			</div>
+		</div>
+		<div class="small-6 columns">
+			<div class="row">
+				<div class="small-6 columns">
+					<a href="#">Podblok 001</a>
+				</div>
+				<div class="small-6 columns">
+					<a href="#">Podblok 002</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-6 columns small-centered panel">
+				<form action="" method="post">
+					<input type="text" placeholder="1" /> 
+					<input type="text" placeholder="2" />
+					<input type="text" placeholder="3" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
