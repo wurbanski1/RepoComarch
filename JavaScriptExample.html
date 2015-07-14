@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var name = null; 
+		get_firstName();
+		console.log(name);
+		var secondName = null; 
+		get_secondName();
+		console.log(secondName);
+		var age = null;
+		get_age();
+		console.log(age);
+
+		function get_firstName() {
+			while (name === null) {
+				name = prompt("Please enter your name", name);
+			}
+				return name;
+		}
+
+		function get_secondName() {
+			while (secondName === null) {
+				secondName = prompt("Please enter your second name", secondName);
+			}
+			return secondName;
+		}
+
+		function get_age() {
+			do {
+				age = prompt("Please enter your age", age);
+			} while(isNaN(age) || age === null)
+			return age;
+		}
+
+		function _czlowiek(firstName, secondName, age) {
+			this.firstName = firstName;
+			this.secondName = secondName;
+			this.age = age;
+			this.przedstawSie = function() {
+				alert("My first name is: " + this.firstName
+						+ ", my second name is: " + this.secondName
+						+ " and i'm " + age + " years old");
+			}
+		}
+		
+		var osoba = new _czlowiek(name, secondName, age);
+		var human = new _czlowiek("ja", "on", "15");
+		
+		osoba.przedstawSie();
+		
+	</script>
+	
+	<script type="text/javascript" charset="UTF-8" src="myScript.js"></script>
+</body>
+</html>
